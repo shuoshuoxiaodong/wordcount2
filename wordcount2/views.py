@@ -17,3 +17,5 @@ def count(request):
     print(result)
     result=sorted(result.items(),key=lambda x:x[1],reverse=True)   #按照词频由高到低排序
     return render(request,'count.html',{'count_result':result})#第2 部分是请求转到的网页（即跳转的网页）第3部分是传过去的模板变量
+def about(request):
+    return render(request,'about.html')
