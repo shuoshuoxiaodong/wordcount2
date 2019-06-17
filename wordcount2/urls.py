@@ -18,5 +18,6 @@ from django.urls import path
 from  . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home)
+    path('',views.home),
+    path('count/',views.count)  #请求views中的count函数
 ]
